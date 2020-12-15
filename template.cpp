@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 #define ll long long
+#define ar array
 
 #define ff first 
 #define ss second 
