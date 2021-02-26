@@ -15,6 +15,7 @@ Plugin 'rstacruz/sparkup', {'rtp':'vim'}
 call vundle#end()
 
 :autocmd BufNewFile *.cpp 0r $HOME/.vim/templates/template.cpp
+:autocmd BufNewFile *.cpp norm G15k$
 :autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++14   -O2   % -o %:r && %:r <CR>
 
 let g:lightline = { 'colorscheme': 'nightfly' }
@@ -102,5 +103,7 @@ function MyDiff()
   endif
 endfunction
 
-colorscheme nightfly
+set mouse=a
 
+colorscheme nightfly
+norm G15k$
